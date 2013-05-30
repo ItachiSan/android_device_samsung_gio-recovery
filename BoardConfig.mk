@@ -81,7 +81,7 @@ TARGET_NO_INITLOGO := true
 ##twrp
 #TARGET_RECOVERY_INITRC := device/samsung/gio/twrp/recovery.rc
 TARGET_RECOVERY_FSTAB := device/samsung/gio/twrp/recovery.fstab
-DEVICE_RESOLUTION := 240x320
+DEVICE_RESOLUTION := 320x480
 TW_NO_REBOOT_BOOTLOADER := true
 TW_FLASH_FROM_STORAGE := true
 BOARD_USES_BML_OVER_MTD := true

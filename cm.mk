@@ -8,7 +8,7 @@ PRODUCT_RELEASE_NAME := gio
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/tass/device_gio.mk)
+$(call inherit-product, device/samsung/gio/device_gio.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gio
