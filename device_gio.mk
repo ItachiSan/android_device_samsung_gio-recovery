@@ -7,7 +7,7 @@ $(call inherit-product-if-exists, vendor/samsung/gio/vendor_blobs.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/samsung/gio/overlay
 
-LOCAL_PATH := device/samsung/tass
+LOCAL_PATH := device/samsung/gio
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
@@ -28,9 +28,9 @@ PRODUCT_COPY_FILES += \
     device/samsung/gio/recovery/modules/fsr.ko:root/lib/modules/fsr.ko \
     device/samsung/gio/recovery/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
     device/samsung/gio/recovery/modules/sec_param.ko:root/lib/modules/sec_param.ko \
-    device/samsung/gio/ramdisk/ueventd.gt-s5570board.rc:root/ueventd.gt-s5570board.rc \
-    device/samsung/gio/ramdisk/init.gt-s5570board.rc:root/init.gt-s5570board.rc \
-    device/samsung/gio/ramdisk/init.gt-s5570board.usb.rc:root/init.gt-s5570board.usb.rc \
+    device/samsung/gio/ramdisk/ueventd.gt-s5660board.rc:root/ueventd.gt-s5660board.rc \
+    device/samsung/gio/ramdisk/init.gt-s5660board.rc:root/init.gt-s5660board.rc \
+    device/samsung/gio/ramdisk/init.gt-s5660board.usb.rc:root/init.gt-s5660board.usb.rc \
 
 
 # ADB

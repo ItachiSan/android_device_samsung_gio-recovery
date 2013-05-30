@@ -1,4 +1,4 @@
-android_device_tass
+android_device_gio
 ===================
 
 TWRP/CWM device config for Galaxy Gio

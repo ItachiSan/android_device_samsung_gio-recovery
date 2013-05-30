@@ -33,8 +33,8 @@ BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE := 0x13600000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_PAGE_SIZE := 0x00001000
-#TARGET_PREBUILT_KERNEL := device/samsung/tass/kernel
-#TARGET_KERNEL_CONFIG := cyanogenmod_tass_defconfig
+#TARGET_PREBUILT_KERNEL := device/samsung/gio/kernel
+#TARGET_KERNEL_CONFIG := cyanogenmod_gio_defconfig
 #TARGET_KERNEL_SOURCE := /home/dan/kernel/CM10.1/
 
 
@@ -48,7 +48,7 @@ BOARD_AVOID_DRAW_TEXTURE_EXTENSION := true
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := tass,GT-S5570
+TARGET_OTA_ASSERT_DEVICE := gio,GT-S5660
 
 # UMS
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
@@ -56,10 +56,10 @@ BOARD_UMS_LUNFILE := "/sys/devices/platform/usb_mass_storage/lun0/file"
 BOARD_USE_USB_MASS_STORAGE_SWITCH := true
 
 # Recovery
-TARGET_RECOVERY_INITRC := device/samsung/tass/recovery/recovery.rc
-#TARGET_RECOVERY_FSTAB := device/samsung/tass/recovery/recovery.fstab
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/tass/recovery/recovery_ui.c
-BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/tass/recovery/graphics.c
+TARGET_RECOVERY_INITRC := device/samsung/gio/recovery/recovery.rc
+TARGET_RECOVERY_FSTAB := device/samsung/gio/recovery/recovery.fstab
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/gio/recovery/recovery_ui.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/gio/recovery/graphics.c
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 8388608
@@ -69,25 +69,25 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BML_BOOT := "/dev/block/bml8"
 BOARD_BML_RECOVERY := "/dev/block/bml9"
 BOARD_RECOVERY_HANDLES_MOUNT := true
-#BOARD_CUSTOM_USB_CONTROLLER := ../../device/samsung/tass/UsbController.cpp
+#BOARD_CUSTOM_USB_CONTROLLER := ../../device/samsung/gio/UsbController.cpp
 BOARD_HAS_DOWNLOAD_MODE := true
 #BOARD_TOUCH_RECOVERY := true
 BOARD_LDPI_RECOVERY := true
-BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"font_7x16.h\"
 BOARD_HAS_NO_MISC_PARTITION := true
 #FRAME BUFFER
 TARGET_NO_INITLOGO := true
 
 ##twrp
-#TARGET_RECOVERY_INITRC := device/samsung/tass/twrp/recovery.rc
-TARGET_RECOVERY_FSTAB := device/samsung/tass/twrp/recovery.fstab
+#TARGET_RECOVERY_INITRC := device/samsung/gio/twrp/recovery.rc
+TARGET_RECOVERY_FSTAB := device/samsung/gio/twrp/recovery.fstab
 DEVICE_RESOLUTION := 240x320
 TW_NO_REBOOT_BOOTLOADER := true
 TW_FLASH_FROM_STORAGE := true
 BOARD_USES_BML_OVER_MTD := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 #TWRP_EVENT_LOGGING := true
-TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/tass/kernel
+TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/gio/kernel
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_CUSTOM_POWER_BUTTON := 107
 TW_ALWAYS_RMRF := true 
